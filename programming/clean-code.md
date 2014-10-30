@@ -89,3 +89,29 @@ assumptions. They aren't a substitute for the book. I make them to help retain t
 * Use descriptive names
     - Don’t be afraid to make a name long. A long descriptive name is better than
       a short enigmatic name
+* Limit the number of arguments a function takes. Arguments require a lot of conceptual power.
+* Functions get more and more difficult to test as you add arguments.
+* Don't use flag (boolean) arguments. It screams this function does more than one thing.
+  Instead split the function into two or more functions.
+* When a function require more than two or three args, it is likely the args should be wrapped
+  into a class of their own.
+* Functions should have no side effects. Don't do things in your function that the name of the function
+  does not imply it does.
+* Avoid output arguments. appendFooter(report) should be report.appendFooter.
+  the keyword 'this' is intended to act as an output argument.
+* If your function must change the state of something, have it change the state of its owning object
+* Functions should either do something or answer something, but not both (command query separation)
+* Prefer exceptions to returning error codes.
+* Extract try/catch blocks out into functions of their own.
+* Functions should do one thing. Error handling is one thing.
+* Every system is built from a DSL designed by the programmers to describe that system.
+* Functions are verbs, classes are nouns.
+* The art of programming is the art of language design.
+* Master programmers think of systems as stories to be told rather than programs to be written.
+* Never forget that your real goal is to tell the story of the system, and the the
+  functions you write need to fit cleanly together into a clear and precise language
+  to help you tell that story.
+
+### Chapter 4 - Comments
+* Prefer rewriting bad code over commenting it.
+* 
