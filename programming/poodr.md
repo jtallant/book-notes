@@ -1,5 +1,7 @@
 # Practical Object Oriented Design in Ruby
 
+---
+
 # In Praise Of Design
 #### Chapter 1
 
@@ -10,13 +12,14 @@
 
 ---
 
-# Easy to Change
 - **Transparent** The consequences of change should be obvious in the code that is changing and in distant code that relies upon it.
 - **Reasonable** The cost of any change should be proportional to the benefits the change achieves.
 - **Usable** Existing code should be usable in new and unexpected contexts
 - **Exemplary** The code itself should encourage those who change it to perpetuate these qualities.
 
-> Code that is Transparent, Reasonable, Usable, and Exemplary (TRUE) not only meets today's needs but can also be changed to meet future needs.
+---
+
+Code that is Transparent, Reasonable, Usable, and Exemplary (TRUE) not only meets today's needs but can also be changed to meet future needs.
 
 ---
 
@@ -50,7 +53,8 @@ Don't expose access to data unless you really need to (private methods)
 
 Don't depend on complicated data structures.
 
-Example:
+Examples:
+
 * Using arrays as constructor arguments
 * Each sender (method) of the data must know what piece of data is at what index in the array
 
@@ -179,7 +183,17 @@ The impact of a small refactoring like in the previous example is small but the 
 ## Extract Extra Responsibilities from Methods
 
 - **Expose previously hidden qualities** Refactoring a class so that all of its methods have a single responsibility has a clarifying effect on the class. You can now more easily extract a class from this class, it doesn't have to be right now.
+
+---
+
+## Extract Extra Responsibilities from Methods
+
 - **Avoid the need for comments** Comments are usually just decaying documentation. Extract the comment into a named method.
+
+---
+
+## Extract Extra Responsibilities from Methods
+
 - **Encourage Reuse** Small methods encourage coding behavior that is healthy for your application. Other programmers will reuse the methods instead of duplicating the code.
 
 ---
